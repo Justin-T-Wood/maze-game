@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <meta charset = "UTF-8">
+    <title>Canvas Rendering - Shapes</title>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="app/styles/style.css">. -->
+</head>
+<body onload = "initialize()">
+    <div class="left column">
+        <canvas id = "canvas-main" width = "500px" height = "500px" ></canvas>
+    </div>
+    <div class="left column">
+        <h1 class="blue">MAZE GAME</h1>
+        <h2 class="blue">Instructions:</h2>
+        <h4 class="blue">Use the arrow keys to navigate the maze.  
+            Press "H" to get a hint as to the next cell you should visit.  
+            Press "P" to display the shortest path to the maze exit.  
+            Your score will go up by 5 points if you visit the next closest cell on the shortest path, and go down by 3 if you go to a cell not on the shortest path.</h4>
+        <h3 class="blue">Time:</h3> <h3 class="blue" id="time">0</h3>
+        <h3 class="blue">Current Score:</h3> <h3 class="blue" id="score">0</h3>
+
+        <h1 class="blue">High Scores:</h1>
+        <ul id="scores">
+        </ul>
+        <h3 class="blue">Change Maze Size:</h3>
+        <button onclick="changeSize(5)">5 X 5 MAZE</button>
+        <button onclick="changeSize(10)">10 X 10 MAZE</button>
+        <button onclick="changeSize(20)">20 X 20 MAZE</button>
+    </div>
+</body>
+</html>
